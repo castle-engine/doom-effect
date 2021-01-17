@@ -1,0 +1,10 @@
+#X3D V3.2 utf8
+PROFILE Interchange
+
+DEF MyScreenEffect ScreenEffect {
+  shaders DEF MyShader ComposedShader {
+    language "GLSL"
+    inputOutput SFFloat EffectStrength 0.0
+    parts ShaderPart { type "FRAGMENT" url "effect_fragment.fs" }
+  }
+}

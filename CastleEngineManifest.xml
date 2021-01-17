@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="doom-effect"
+  standalone_source="doom_effect_standalone.lpr"
+  game_units="GameInitialize"
+  qualified_name="io.castleengine.doomeffect"
+  caption="Doom Effect"
+>
+</project>

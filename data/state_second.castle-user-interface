@@ -1,0 +1,18 @@
+{
+  "FullSize" : true,
+  "Name" : "Group1",
+  "$Children" : [
+    {
+      "Content" : {
+        "URL" : "castle-data:/Screenshot_Doom_20210117_193148.png",
+        "$ClassName" : "TCastleImagePersistent"
+      },
+      "FullSize" : true,
+      "Name" : "ImageControl1",
+      "$Children" : [
+      ],
+      "$ClassName" : "TCastleImageControl"
+    }
+  ],
+  "$ClassName" : "TCastleUserInterface"
+}
