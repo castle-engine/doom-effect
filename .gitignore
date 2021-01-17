@@ -1,0 +1,17 @@
+*~
+*.log
+*.lps
+*.dbg
+*.res
+castle-engine-output
+lib
+backup
+
+# executables and releases
+*.dll
+*.exe
+*.apk
+*.run
+kryftolike
+*.tar.gz
+*.zip
