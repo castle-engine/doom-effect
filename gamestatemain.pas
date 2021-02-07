@@ -1,8 +1,3 @@
-{ Main state, where most of the application logic takes place.
-
-  Feel free to use this code as a starting point for your own projects.
-  (This code is in public domain, unlike most other CGE code which
-  is covered by the LGPL license variant, see the COPYING.txt file.) }
 unit GameStateMain;
 
 interface
@@ -12,7 +7,6 @@ uses Classes,
   CastleKeysMouse;
 
 type
-  { Main state, where most of the application logic takes place. }
   TStateMain = class(TUIState)
   private
     procedure SwitchState(Sender: TObject);

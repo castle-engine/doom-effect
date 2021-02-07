@@ -1,10 +1,3 @@
-{ Game initialization.
-  This unit is cross-platform.
-  It will be used by the platform-specific program or library file.
-
-  Feel free to use this code as a starting point for your own projects.
-  (This code is in public domain, unlike most other CGE code which
-  is covered by the LGPL license variant, see the COPYING.txt file.) }
 unit GameInitialize;
 
 interface
@@ -26,10 +19,10 @@ begin
   { Adjust container settings for a scalable UI (adjusts to any window size in a smart way). }
   Window.Container.LoadSettings('castle-data:/CastleSettings.xml');
 
-  //Create both Menu and Second state
+  //Create both Main and Second state
   StateMain := TStateMain.Create(Application);
   StateSecond := TStateSecond.Create(Application);
-  //And set menu (StateMain) as current
+  //And set StateMain as current
   TUIState.Current := StateMain;
 end;
 
@@ -54,10 +47,4 @@ initialization
   Window := TCastleWindowBase.Create(Application);
   Window.Caption := 'Doom Effect';
   Application.MainWindow := Window;
-
-  { You should not need to do *anything* more in the unit "initialization" section.
-    Most of your game initialization should happen inside ApplicationInitialize.
-    In particular, it is not allowed to read files before ApplicationInitialize
-    (because in case of non-desktop platforms,
-    some necessary resources may not be prepared yet). }
 end.
